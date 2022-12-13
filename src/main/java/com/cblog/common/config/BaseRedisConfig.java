@@ -1,7 +1,7 @@
 package com.cblog.common.config;
 
-import com.cblog.common.config.module.RedisService;
-import com.cblog.common.config.module.impl.RedisServiceImpl;
+import com.cblog.common.config.component.redis.RedisService;
+import com.cblog.common.config.component.redis.impl.RedisServiceImpl;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,7 +22,7 @@ import java.time.Duration;
 /*
  * @Author Echo
  * @Description Redis基础配置
- * @Date 20:48 2022/12/13
+ * @Date 20:49 2022/12/13
  * @Param 
  * @return 
  **/

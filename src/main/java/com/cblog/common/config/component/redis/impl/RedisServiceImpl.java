@@ -1,6 +1,6 @@
-package com.cblog.common.config.module.impl;
+package com.cblog.common.config.component.redis.impl;
 
-import com.cblog.common.config.module.RedisService;
+import com.cblog.common.config.component.redis.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 

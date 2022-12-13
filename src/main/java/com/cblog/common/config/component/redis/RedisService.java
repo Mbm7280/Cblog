@@ -1,4 +1,4 @@
-package com.cblog.common.config.module;
+package com.cblog.common.config.component.redis;
 
 import java.util.List;
 import java.util.Map;

@@ -17,4 +17,14 @@
         <result column="modify_time" property="modifyTime" />
     </resultMap>
 
+
+    <select id="getAdminIdList" resultType="java.lang.Long">
+        SELECT
+        DISTINCT ar.admin_id
+        FROM
+        ums_role_resource_relation rr
+        LEFT JOIN ums_admin_role_relation ar ON rr.role_id = ar.role_id
+        WHERE rr.resource_id=#{resourceId}
+    </select>
+
 </mapper>
