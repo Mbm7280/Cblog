@@ -7,7 +7,7 @@ CREATE TABLE `ums_admin`  (
   `nick_name` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '昵称',
   `note` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注信息',
   `login_time` datetime NULL DEFAULT NULL COMMENT '最后登录时间',
-  `status` varchar(50) NULL DEFAULT 1 COMMENT '帐号启用状态：START->禁用；STOP->启用',
+  `status` varchar(50) NULL DEFAULT NULL COMMENT '启用状态；DISABLE->禁用；START->启用',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   `modify_time` datetime NULL COMMENT '修改时间',
   PRIMARY KEY (`id`) USING BTREE
@@ -69,7 +69,7 @@ CREATE TABLE `ums_role`  (
   `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '角色名称',
   `description` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '角色描述',
   `admin_count` int(11) NULL DEFAULT NULL COMMENT '该角色后台用户数量',
-  `status` int(1) NULL DEFAULT 1 COMMENT '启用状态：0->禁用；1->启用',
+  `status` varchar(50) NULL DEFAULT NULL COMMENT '启用状态；DISABLE->禁用；START->启用',
   `sort` int(11) NULL DEFAULT 0 COMMENT '排序',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   `modify_time` datetime NULL COMMENT '修改时间',
