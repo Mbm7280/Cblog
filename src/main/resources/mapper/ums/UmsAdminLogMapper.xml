@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cblog.modules.ums.mapper.UmsAdminLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cblog.modules.ums.model.UmsAdminLog">
+        <id column="id" property="id" />
+        <result column="admin_id" property="adminId" />
+        <result column="operate_ip" property="operateIp" />
+        <result column="ip_address" property="ipAddress" />
+        <result column="request_method" property="requestMethod" />
+        <result column="request_type" property="requestType" />
+        <result column="request_args" property="requestArgs" />
+        <result column="responce_args" property="responceArgs" />
+        <result column="request_status" property="requestStatus" />
+        <result column="admin_browser" property="adminBrowser" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>

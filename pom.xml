@@ -76,12 +76,12 @@
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>2.0.9</version>
         </dependency>
-<!--        &lt;!&ndash;redis依赖配置&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;SpringSecurity依赖配置&ndash;&gt;-->
+        <!--redis依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--SpringSecurity依赖配置-->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
 <!--            <artifactId>spring-boot-starter-security</artifactId>-->
